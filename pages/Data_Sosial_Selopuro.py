@@ -9,11 +9,11 @@ st.set_page_config(
 
 with st.sidebar:
         st.page_link('streamlit_app.py', label='home', icon='🏠')
-        st.page_link('pages/1_Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
-        st.page_link('pages/2_Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
-        st.page_link('pages/3_Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')
-        st.page_link('pages/4_Data_Pemerintahan_Selopuro.py', label='Data Pemerintahan', icon='🏛️')
-        st.page_link('pages/5_Data_Demografis_Selopuro.py', label='Data Demografis', icon='🌏')
+        st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
+        st.page_link('pages/Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
+        st.page_link('pages/Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')
+        st.page_link('pages/Data_Pemerintahan_Selopuro.py', label='Data Pemerintahan', icon='🏛️')
+        st.page_link('pages/Data_Demografis_Selopuro.py', label='Data Demografis', icon='🌏')
 
 df_pendidikan = pd.read_csv("Data\Sosial\Pendidikan.csv",sep=';')
 st.dataframe(df_pendidikan)
