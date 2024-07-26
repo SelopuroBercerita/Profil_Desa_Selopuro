@@ -4,8 +4,6 @@ st.set_page_config(
     page_icon = "Image/LogoSelopuroBercerita.png",
     page_title = "Selopuro Bercerita")
 
-st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
-
 with st.sidebar:
         st.page_link('streamlit_app.py', label='home', icon='🏠')
         st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
@@ -14,7 +12,7 @@ with st.sidebar:
         st.page_link('pages/Data_Pemerintahan_Selopuro.py', label='Data Pemerintahan', icon='🏛️')
         st.page_link('pages/Data_Demografis_Selopuro.py', label='Data Demografis', icon='🌏')
 
-
+st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
 
 title = """
 <div class="four">
@@ -85,7 +83,7 @@ background-attachment: local;
 }}
 [data-testid="stSidebarContent"] {{
 background: #27885F;
-font-color: #9e9e9e
+font-color: #FFFFFF;
 }}
 </style>
 """
