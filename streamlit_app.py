@@ -5,7 +5,6 @@ st.set_page_config(
     page_title = "Selopuro Bercerita")
 
 st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
-st.title("home")
 
 with st.sidebar:
         st.page_link('streamlit_app.py', label='home', icon='🏠')
