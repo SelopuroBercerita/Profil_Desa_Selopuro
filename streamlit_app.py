@@ -4,7 +4,7 @@ st.set_page_config(
     page_icon = "Image/LogoSelopuroBercerita.png",
     page_title = "Selopuro Bercerita")
 
-st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
+#st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
 
 with st.sidebar:
         st.page_link('streamlit_app.py', label='home', icon='🏠')
