@@ -11,17 +11,17 @@ with st.sidebar:
         st.page_link('pages/Data_Pemerintahan_Selopuro.py', label='Data Pemerintahan', icon='🏛️')
         st.page_link('pages/Data_Demografis_Selopuro.py', label='Data Demografis', icon='🌏')
 
-df_pertanian = pd.DataFrame(pd.read_csv("Data\Ekonomi\Pertanian.csv",sep=';'))
+df_pertanian = pd.DataFrame(pd.read_csv("Data/Ekonomi/Pertanian.csv",sep=';'))
 st.dataframe(df_pertanian)
 chart = px.bar(df_pertanian,x="Jenis Tanaman",y="Luas (ha)")
 st.plotly_chart(chart)
 
-df_peternakan = pd.DataFrame(pd.read_csv("Data\Ekonomi\Peternakan.csv",sep=';'))
+df_peternakan = pd.DataFrame(pd.read_csv("Data/Ekonomi/Peternakan.csv",sep=';'))
 st.dataframe(df_peternakan)
 chart = px.bar(df_peternakan,x="Jenis Ternak",y="Jumlah")
 st.plotly_chart(chart)
 
-df_pencaharian = pd.DataFrame(pd.read_csv("Data\Ekonomi\Pencaharian.csv",sep=';'))
+df_pencaharian = pd.DataFrame(pd.read_csv("Data/Ekonomi/Pencaharian.csv",sep=';'))
 st.dataframe(df_pencaharian)
 chart = px.bar(df_pencaharian,x="Mata Pencaharian",y="Orang")
 st.plotly_chart(chart)

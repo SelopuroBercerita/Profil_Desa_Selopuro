@@ -18,7 +18,7 @@ with st.sidebar:
 df_pendidikan = pd.read_csv("Data/Sosial/Pendidikan.csv",sep=';')
 st.dataframe(df_pendidikan)
 #st.bar_chart(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang")
-chart = px.bar(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang")
+chart = px.bar(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang",template="")
 st.plotly_chart(chart)
 
 df_lpendidikan = pd.read_csv("Data/Sosial/Lembaga_Pendidikan.csv",sep=';')
