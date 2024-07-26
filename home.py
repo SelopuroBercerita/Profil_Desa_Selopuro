@@ -4,20 +4,78 @@ st.set_page_config(
     page_icon = "Image/LogoSelopuroBercerita.png",
     page_title = "Selopuro Bercerita")
 
-#st.write("Selopuro ngopi 🍵")
+st.sidebar.success("Oleh tim KKN IPB 2024 Selopuro")
 
-st.sidebar.success("Pilih page diatas")
+title = """
+<div class="four">
+  <h1> <span> Selopuro Bercerita </span> Profil Desa <em>Selopuro</em></h1>
+</div>
+
+<style>
+h1 {
+  position: relative;
+  padding: 0;
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+
+.four h1 {
+  text-align: center;
+  padding-bottom: 0.7em;
+  transform : translate(5%, -45%)
+}
+.four h1 span {
+  font-weight: 300;
+  word-spacing: 3px;
+  line-height: 2em;
+  padding-bottom: 0.35em;
+  color: #FFFFFF;
+}
+.four h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 1px;
+  content: "";
+  left: 50%;
+  margin-left: -60px;
+  background-color: #FFFFFF;
+}
+</style>
+"""
 
 background = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
+background-image: url("https://i.imgur.com/FtT3Gwm.png");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: local;
-}}[data-testid="stSidebarContent"] {{
+}}
+[data-testid="stSidebarContent"] {{
 background: #27885F;
+font-color: #9e9e9e
 }}
 </style>
 """
@@ -38,14 +96,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: verdana;
-    background: #CCC
+    background: #CCC;
 }
 
 .center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, 0%);
+    transform: translate(-50%, -10%);
 }
 
 .page {
@@ -55,7 +113,8 @@ body {
     background: #FFF;
     border-left: 30px solid #3CA378;
     transform: rotate(-45deg) skewX(10deg) scale(.8);
-    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+    filter: none;
 }
 
 .page h1 {
@@ -105,6 +164,7 @@ body {
 }
 </style>
 """
+st.markdown(title, unsafe_allow_html=True)
 st.markdown(background, unsafe_allow_html=True)
 st.markdown(body, unsafe_allow_html=True)
 
