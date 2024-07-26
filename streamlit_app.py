@@ -83,7 +83,7 @@ background-attachment: local;
 }}
 [data-testid="stSidebarContent"] {{
 background: #27885F;
-font-color: #FFFFFF;
+color: #FFFFFF;
 }}
 </style>
 """
