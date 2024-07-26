@@ -90,6 +90,10 @@ background-attachment: local;
   color: #FFFFFF;
   font-color: #FFFFFF;
 }}
+[data-testid="stSidebarCollapseButton"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
 </style>
 """
 
