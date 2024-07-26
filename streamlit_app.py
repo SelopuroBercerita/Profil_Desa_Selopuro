@@ -94,6 +94,10 @@ background-attachment: local;
   color: #FFFFFF;
   font-color: #FFFFFF;
 }}
+[data-testid="baseButton-headerNoPadding"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
 </style>
 """
 
