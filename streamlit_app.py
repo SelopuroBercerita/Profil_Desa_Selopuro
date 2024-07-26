@@ -82,8 +82,9 @@ background-repeat: no-repeat;
 background-attachment: local;
 }}
 [data-testid="stSidebarContent"] {{
-background: #27885F;
-color: #FFFFFF;
+  background: #27885F;
+  color: #FFFFFF;
+  font-color: #FFFFFF;
 }}
 </style>
 """
@@ -137,7 +138,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: justify;
-    color: #9e9e9e
+    color: #FFFFFF
 }
 
 .page img {
