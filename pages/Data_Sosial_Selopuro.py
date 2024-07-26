@@ -8,30 +8,30 @@ st.set_page_config(
     page_title = "Selopuro Bercerita")
 
 with st.sidebar:
-        st.page_link('streamlit_app.py', label='home', icon='🏠')
+        st.page_link('streamlit_app.py', label='Home', icon='🏠')
         st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
         st.page_link('pages/Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
         st.page_link('pages/Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')
         st.page_link('pages/Data_Pemerintahan_Selopuro.py', label='Data Pemerintahan', icon='🏛️')
         st.page_link('pages/Data_Demografis_Selopuro.py', label='Data Demografis', icon='🌏')
 
-df_pendidikan = pd.read_csv("Data\Sosial\Pendidikan.csv",sep=';')
+df_pendidikan = pd.read_csv("Data/Sosial/Pendidikan.csv",sep=';')
 st.dataframe(df_pendidikan)
 #st.bar_chart(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang")
 chart = px.bar(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang")
 st.plotly_chart(chart)
 
-df_lpendidikan = pd.read_csv("Data\Sosial\Lembaga_Pendidikan.csv",sep=';')
+df_lpendidikan = pd.read_csv("Data/Sosial/Lembaga_Pendidikan.csv",sep=';')
 st.dataframe(df_lpendidikan)
 chart = px.bar(df_lpendidikan,x="Lembaga Pendidikan",y="Jumlah")
 st.plotly_chart(chart)
 
-df_agama = pd.read_csv("Data\Sosial\Agama.csv",sep=';')
+df_agama = pd.read_csv("Data/Sosial/Agama.csv",sep=';')
 st.dataframe(df_agama)
 chart = px.bar(df_agama,x="Agama",y="Jumlah")
 st.plotly_chart(chart)
 
-df_lagama = pd.read_csv("Data\Sosial\Lembaga_Agama.csv",sep=';')
+df_lagama = pd.read_csv("Data/Sosial/Lembaga_Agama.csv",sep=';')
 st.dataframe(df_lagama)
 chart = px.bar(df_lagama,x="Tempat Ibadah",y="Jumlah")
 st.plotly_chart(chart)

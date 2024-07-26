@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 with st.sidebar:
-        st.page_link('streamlit_app.py', label='home', icon='🏠')
+        st.page_link('streamlit_app.py', label='Home', icon='🏠')
         st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
         st.page_link('pages/Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
         st.page_link('pages/Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')

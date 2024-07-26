@@ -5,7 +5,7 @@ st.set_page_config(
     page_title = "Selopuro Bercerita")
 
 with st.sidebar:
-        st.page_link('streamlit_app.py', label='home', icon='🏠')
+        st.page_link('streamlit_app.py', label='Home', icon='🏠')
         st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
         st.page_link('pages/Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
         st.page_link('pages/Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')
@@ -75,7 +75,7 @@ h1 em {
 background = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.imgur.com/FtT3Gwm.png");
+background-image: url("https://i.imgur.com/uNjTxMV.png");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;

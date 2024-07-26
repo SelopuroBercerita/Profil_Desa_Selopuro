@@ -5,7 +5,7 @@ st.set_page_config(
     page_title = "Selopuro Bercerita")
 
 with st.sidebar:
-        st.page_link('streamlit_app.py', label='home', icon='🏠')
+        st.page_link('streamlit_app.py', label='Home', icon='🏠')
         st.page_link('pages/Gambaran_Umum_Desa_Selopuro.py', label='Gambaran Umum', icon='📕')
         st.page_link('pages/Data_Sosial_Selopuro.py', label='Data Sosial', icon='🫂')
         st.page_link('pages/Data_Ekonomi_Selopuro.py', label='Data Ekonomi', icon='💵')
@@ -15,19 +15,28 @@ with st.sidebar:
 background = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
+background-image: url("https://i.imgur.com/FtT3Gwm.png");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: local;
-}}[data-testid="stSidebarContent"] {{
-background: #27885F;
-font-color: #9e9e9e;
-font-family: verdana;
-}}[data-testid="stVerticalBlock"] {{
-margin = 0;
-padding = 0;
-width:100%;
+}}
+[data-testid="stSidebarContent"] {{
+  background: #27885F;
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
+[data-testid="stMarkdownContainer"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
+[data-testid="stSidebarCollapseButton"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
+[data-testid="baseButton-headerNoPadding"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
 }}
 </style>
 """
@@ -52,7 +61,7 @@ content = """
                     <li><mark class="blue">Dukuh Topar</mark> pernah menjadi pusat Pemerintahan Desa atau petinggen Topar yang di pimpin Petinggi atau Kepala Desa bernama Abdul Roslan. </li>
                     <li><mark class="green">Dukuh Klindon</mark> pernah menjadi pusat Pemerintahan Desa yang dipimpin oleh Petinggi yang bernama Wirowar. </li>
                     <li><mark class="orange">Dukuh Tulis</mark> pernah menjadi pusat Pemerintahan Desa atau Petinggen pada waktu itu dipimpin oleh Petinggi yang bernama Wardini Suryoningrat. </li>
-                    <li><mark>Dukuh Ngandangan</mark> pada waktu itu masih dalam keadaan hutan belantara belum ada perkampungan, akan tetapi tempat itu strategis diperempatan jalan digunakan untuk mengadang pangan para tengkulak/bakul dan para petani yang menjual dagangamya cukup disitu, seperti gaplek,jagung,ketela, randu, ditimbang dengan memakai timbangan jagang tiga dan tepat itu yang sehari harinya digunakan ngadang pangan kemudian tempat itu disebut Ngadangan. </li>
+                    <li><mark>Dukuh Ngadangan</mark> pada waktu itu masih dalam keadaan hutan belantara belum ada perkampungan, akan tetapi tempat itu strategis diperempatan jalan digunakan untuk mengadang pangan para tengkulak/bakul dan para petani yang menjual dagangamya cukup disitu, seperti gaplek,jagung,ketela, randu, ditimbang dengan memakai timbangan jagang tiga dan tepat itu yang sehari harinya digunakan ngadang pangan kemudian tempat itu disebut Ngadangan. </li>
                 </ul>
                 <p>
                     Dukuh Tulis merupakan wilayah pemerintahan desa yang awalnya dipimpin oleh Petinggi Wardini Suryoningrat. Kemudian, pemerintahan Selopuro yang terdiri dari beberapa wilayah dukuhan digabung menjadi satu desa, yaitu Desa Selopuro. Nama "Selopuro" berasal dari kata "Selo" yang berarti batu dan "Puro" yang berarti gapuro atau pintu, sehingga "Selopuro" berarti gapuro yang terbuat dari batu. Wardini Suryoningrat menjabat sebagai Petinggi hingga tahun 1945.
