@@ -86,6 +86,10 @@ background-attachment: local;
   color: #FFFFFF;
   font-color: #FFFFFF;
 }}
+[data-testid="stMarkdownContainer"] {{
+  color: #FFFFFF;
+  font-color: #FFFFFF;
+}}
 </style>
 """
 
