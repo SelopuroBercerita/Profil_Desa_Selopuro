@@ -15,7 +15,7 @@ with st.sidebar:
 background = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.imgur.com/FtT3Gwm.png");
+background-image: url("https://i.imgur.com/kMBwZF2.jpg");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
