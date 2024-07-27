@@ -61,7 +61,7 @@ with col2:
 
 st.write('Desa Selopuro terdiri dari 5 dukuh (RW), yang masing masing memiliki sejumlah RT')
 st.write('')
-df_dukuh = pd.DataFrame(pd.read_csv("Data\Pemerintahan\Dukuh_RT.csv",sep=';'))
+df_dukuh = pd.DataFrame(pd.read_csv("Data/Pemerintahan/Dukuh_RT.csv",sep=';'))
 st.dataframe(df_dukuh)
 
 styling = """
