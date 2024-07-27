@@ -24,7 +24,7 @@ df_pendidikan = pd.read_csv("Data/Sosial/Pendidikan.csv",sep=';')
 with col1:
     st.dataframe(df_pendidikan)
 with col2:
-    chart = px.bar(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang",template="simple_white")
+    chart = px.bar(df_pendidikan,x="Tingkat Pendidikan",y="Jumlah Orang")
     st.plotly_chart(chart)
 st.write('Sebagian besar masyarakat Selopuro memiliki tingkat pendidikan SD/Sederajat, sebagian lagi sampai SMP. Sebagian lulus SMA yang menepati wajib belajar 12 tahun, dan sebagian kecil memiliki kesempatan untuk melanjutkannya ke perguruan tinggi. Masih ada bagian masyarakat yang putus sekolah dan buta huruf. Data ini menunjukan bahwa pendidikan di Desa Selopuro perlu lagi untuk ditingkatkan.')
 
