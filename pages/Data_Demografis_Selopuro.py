@@ -48,7 +48,7 @@ background-attachment: local;
 </style>
 """
 st.title("Data Demografis Desa Selopuro")
-df_lahan = pd.read_csv("Data\Demografis\Lahan.csv",sep=';')
+df_lahan = pd.read_csv("Data/Demografis/Lahan.csv",sep=';')
 st.dataframe(df_lahan)
 chart = px.pie(df_lahan,names="Jenis wilayah",values="Luas wilayah (ha)")
 st.plotly_chart(chart)
